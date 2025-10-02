@@ -111,3 +111,7 @@ docker-compose down -v
 
 ## 📊 Data Pipeline Flow
 Python Producer (Faker)   ->   Kafka Topic: flights   ->   Spark Structured Streaming   ->   PostgreSQl    ->   Streamlit Dashboard
+
+## 📝 Example Data
+![Data Pipeline](/image/pipeline.png)
+
