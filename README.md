@@ -46,12 +46,46 @@ Project Quick Start Guide
 🚀 Quick Start
 ## 🚀 Quick Start
 
-```markdown
 1. **Start Docker Services**
 ```bash
 docker-compose up -d
-
+```
 2. **Verify running containers**
+Make sure Kafka, PostgreSQL, Spark, and Streamlit containers are up.
 ```bash
 docker ps
-Make sure Kafka, PostgreSQL, Spark, and Streamlit containers are up.
+```
+3-**Run Python Producer**
+Open scripts/producer.ipynb (or scripts/producer.py)
+Execute the notebook/script to generate flight events and send them to Kafka topic flights
+
+4-**Monitor Kafka Topic**
+Open Kafka UI at [http://localhost:8090](http://localhost:8090)
+Confirm messages are being produced to topic flights
+
+5-**Set Up PostgreSQL**
+-Open pgAdmin at [http://localhost:8085](http://localhost:8085)
+-Login with:
+-Email: admin@admin.com
+-Password: admin
+Create a new server connection:
+-Name: postgres_general
+-Host: postgres
+-Port: 5432
+-Username: admin
+-Password: admin
+
+Create database flight_radar
+```
+CREATE DATABASE flight_radar;
+Create flights table:
+
+CREATE TABLE flights (
+    flight_id VARCHAR PRIMARY KEY,
+    origin TEXT,
+    destination TEXT,
+    status TEXT,
+    departure_time BIGINT,
+    arrival_time BIGINT
+);
+```
