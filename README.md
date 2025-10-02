@@ -113,5 +113,5 @@ docker-compose down -v
 Python Producer (Faker)   ->   Kafka Topic: flights   ->   Spark Structured Streaming   ->   PostgreSQl    ->   Streamlit Dashboard
 
 ## 📝 Example Data
-![Data Pipeline](/image/pipeline.png)
+![Data Pipeline](/images/Screenshot1.png)
 
