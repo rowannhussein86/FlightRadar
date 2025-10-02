@@ -115,3 +115,10 @@ Python Producer (Faker)   ->   Kafka Topic: flights   ->   Spark Structured Stre
 ## 📝 Example Data
 ![Data Pipeline](/images/Screenshot1.png)
 
+## 📸 Sample Output
+![Flight Dashboard](/images/Screenshot2.png)
+![Flight Dashboard](/images/Screenshot3.png)
+![Flight Dashboard](/images/Screenshot4.png)
+![Flight Dashboard](/images/Screenshot5.png)
+![Flight Dashboard](/images/Screenshot6.png)
+
