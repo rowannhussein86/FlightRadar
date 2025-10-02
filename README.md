@@ -1,5 +1,3 @@
-# FlightRadar
-
 # ✈️ FlightRadar 2025 - Real-Time Flight Simulation & Visualization
 
 FlightRadar 2025 is a **dynamic flight tracking simulation** designed to mimic real-world airline data pipelines. 
@@ -110,3 +108,6 @@ Explore the real-time flight map and flight statuses
 ```
 docker-compose down -v
 ```
+
+## 📊 Data Pipeline Flow
+Python Producer (Faker)   ->   Kafka Topic: flights   ->   Spark Structured Streaming   ->   PostgreSQl    ->   Streamlit Dashboard
