@@ -44,15 +44,11 @@ It allows you to simulate flights across the globe, stream data in real-time, pr
 
 ## 🚀 Quick Start
 
-
 1. **Start Docker Services**
-
-** 
+```bash
 docker-compose up -d
-**
 
 2. **Verify running containers**
 ```bash
 docker ps
-'''
 Make sure Kafka, PostgreSQL, Spark, and Streamlit containers are up.
