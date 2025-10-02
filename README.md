@@ -89,3 +89,24 @@ CREATE TABLE flights (
     arrival_time BIGINT
 );
 ```
+
+
+6-**Run Spark Streaming**
+Open scripts/spark_streaming.ipynb
+Ensure PostgreSQL driver is installed:
+```
+pip install psycopg2-binary
+```
+Execute the notebook to process events from Kafka and store them into PostgreSQL
+
+7-**Launch Streamlit Dashboard**
+```
+streamlit run scripts/dashboard.py
+```
+Access at [http://localhost:8501](http://localhost:8501)
+Explore the real-time flight map and flight statuses
+
+8-**Stop and Clean Up**
+```
+docker-compose down -v
+```
