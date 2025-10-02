@@ -46,11 +46,10 @@ It allows you to simulate flights across the globe, stream data in real-time, pr
 
 
 1. **Start Docker Services**
-```bash
+
 ** 
 docker-compose up -d
-
-
+**
 
 2. **Verify running containers**
 ```bash
