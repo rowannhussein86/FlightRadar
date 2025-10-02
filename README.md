@@ -75,7 +75,7 @@ docker ps
   - Username: `admin`  
   - Password: `admin`
 
--Create database flight_radar
+- Create database flight_radar
 ```
 CREATE DATABASE flight_radar;
 Create flights table:
