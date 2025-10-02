@@ -55,27 +55,27 @@ Make sure Kafka, PostgreSQL, Spark, and Streamlit containers are up.
 ```bash
 docker ps
 ```
-3-**Run Python Producer**
-Open scripts/producer.ipynb (or scripts/producer.py)
-Execute the notebook/script to generate flight events and send them to Kafka topic flights
+3. **Run Python Producer**  
+- Open `scripts/producer.ipynb` (or `scripts/producer.py`)  
+- Execute the notebook/script to generate flight events and send them to Kafka topic `flights`
 
-4-**Monitor Kafka Topic**
-Open Kafka UI at [http://localhost:8090](http://localhost:8090)
-Confirm messages are being produced to topic flights
+4. **Monitor Kafka Topic**  
+- Open Kafka UI at [http://localhost:8090](http://localhost:8090)  
+- Confirm that messages are being produced to topic `flights`
 
-5-**Set Up PostgreSQL**
--Open pgAdmin at [http://localhost:8085](http://localhost:8085)
--Login with:
--Email: admin@admin.com
--Password: admin
-Create a new server connection:
--Name: postgres_general
--Host: postgres
--Port: 5432
--Username: admin
--Password: admin
+5. **Set Up PostgreSQL**  
+- Open pgAdmin at [http://localhost:8085](http://localhost:8085)  
+- Login with:  
+  - Email: `admin@admin.com`  
+  - Password: `admin`  
+- Create a new server connection:  
+  - Name: `postgres_general`  
+  - Host: `postgres`  
+  - Port: `5432`  
+  - Username: `admin`  
+  - Password: `admin`
 
-Create database flight_radar
+-Create database flight_radar
 ```
 CREATE DATABASE flight_radar;
 Create flights table:
